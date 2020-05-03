@@ -1,0 +1,174 @@
+.navbar-text {
+    color: white;
+    font-weight: bolder;
+}
+
+.header {
+    margin-bottom: 10px;
+}
+
+.logo-text {
+    font-style: italic;
+    font-weight: lighter;
+    color: white;
+}
+
+.navbar-custom {
+    background-color: #299EEF;
+}
+
+.dropdown-menu {
+    background-color: white;
+    color: darkslategray;
+}
+
+.fas {
+    color: white;
+    tab-size: large;
+}
+
+.row {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.groups-options {
+    color: darkslategrey;
+    font-size: 15px;
+    padding: 5px;
+}
+
+ .groups-options:hover {
+    background-color: white;
+}
+
+.group-hostedby {
+    color: darkslategrey;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.newgroup {
+    width: 300px;
+    margin: 10px;
+    height: 300px;
+    background: #5BC9EE;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    margin-bottom: 25px;
+  }
+
+  .newgroup-plus {
+    width: 300px;
+    margin: 10px;
+    height: 300px;
+    background: #4A6E90;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    margin-bottom: 25px;
+  }
+
+  .newgroup-plus:hover {
+    background-color: #FFC300;
+  }
+
+.dropdown {
+    background-color: #FFC300;
+    color: darkslategray;
+}
+
+#groupheader {
+    background-color: #FFC300;
+    background-size: 100%;
+}
+
+.footer-text {
+    text-align: left;
+    color: white;
+}
+
+.btn.btn-outline {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+}
+
+.footer {
+    background-color: #299EEF;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.contact {
+    text-align: left;
+    color: white;
+}
+
+.description {
+    margin-top: 15px;
+}
+
+a {
+    color: darkslategray;
+}
+
+.fab.fa-linkedin {
+    font-size: 40px; 
+    color: #1c2541;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.far.fa-envelope {
+    font-size: 40px; 
+    color: #1c2541;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.btn.btn-outline {
+    font-size: 15px; 
+    color: #1c2541;
+    border: 2px solid darkslategray;
+    cursor: pointer;
+}
+
+.fas.fa-plus {
+    font-size: 100px; 
+    margin: 100px;
+    cursor: pointer;
+}
+
+.fas.fa-plus:hover {
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+}
+
+.box-holder {
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main-text { 
+    margin-left: 20px; 
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    color: darkslategray;
+}
+
+.fas.fa-edit {
+    font-size: 10px; 
+    color: #1c2541;
+    cursor: pointer;
+    color: darkslategray;
+}

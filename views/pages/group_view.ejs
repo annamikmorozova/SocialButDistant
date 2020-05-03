@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="Erik Yeomans and Anna Morozova" content="SitePoint">
+    <!-- Imports the Robot font from Google so that we can use it within our CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</head>
+
+<!-- FontAwesome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+<!-- Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
+<link rel="stylesheet" href="/static/css/styles.css">
+<script src="#"></script>
+</head>
+
+
+<body>
+    <div class="header">
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="navbar-custom p-4">
+                    <h4 class="navbar-text">
+                        <div class="row">
+                            <div class="col-6">
+                                <button type="button" class="login btn btn-outline-dark">Log in</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="login btn btn-outline-dark">Sign up</button>
+                            </div>
+                        </div>
+                    </h4>
+                </div>
+            </div>
+            <nav class="navbar navbar-custom">
+                <div class="navbar-custom p-4">
+                    <h4 class="navbar-text">#SocialButDistant</h4>
+                    <div class="logo-text">Ready for your life to get a bit easier?</div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <h1 class="main-text">
+            <%= name %>
+            <i class="fas fa-edit"></i>
+        </h1>
+        <div class="box-holder">
+
+            <div class="newgroup-plus">
+                <i class="fas fa-plus"></i>
+            </div>
+            <% meetings.forEach(function(meeting) { %>
+            <div class="newgroup">
+                <div class="dropdown">
+                    <button class="dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li class="groups-options"><a href="#">Rename the group</a></li>
+                        <li class="groups-options"><a href="#">Update link</a></li>
+                        <li class="groups-options"><a href="#">Dalete meeting</a></li>
+                        <li class="groups-options"><a href="#">Get link</a></li>
+                    </ul>
+                    <span class="group-hostedby"><%= meeting.name %> Hosted by <%= meeting.host.username %></span>
+                </div>
+            </div>
+            <% }); %>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="row">
+            <div class="col-4 footer-text">
+                Description:
+                <p class="description">This project was inspired by coronavirus in Spring 2020 with the goal to make lives of people easier.
+                    Create and manage groups of friends to share game/video links.</p>
+            </div>
+            <div class="col-4 footer-text">
+                Contact:
+                <div class="contact">
+                    <a href="https://github.com/annamikmorozova/SocialButDistant" target="_blank"><button type="button"
+                            class="btn btn-outline">GitHub</button></a>
+                    <p>Long Island City, NY 11101</p>
+                </div>
+            </div>
+            <div class="col-4 footer-text">
+                <div>
+                    <a href="mailto:annamorozovatennis@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/annamorozovaadvcom/" target="_blank"><i
+                            class="fab fa-linkedin"></i> </a>
+
+                </div>
+                <div>
+                    <a href="mailto:yeomanse@vt.edu" target="_blank"><i class="far fa-envelope"></i> </a>
+                    <a href="https://www.linkedin.com/in/yeomanse/" target="_blank"><i class="fab fa-linkedin"></i> </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Erik Yeomans and Anna Morozova, 2020</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

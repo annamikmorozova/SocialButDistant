@@ -7,7 +7,7 @@ router.route("/:id").get((req, res) => {
     Group.findOne({_id: req.params.id})
         .populate("creator")
         .populate({path: "meetings", populate: {path: "host", model: "User"}})
-        .then(group => res.json(group))
+        .then(group => res.render("pages/group_view", group))
         .catch(err => res.status(400).json("Error: " + err));
 });
 
