@@ -31,9 +31,9 @@
                         <i class="fas fa-align-justify"></i>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li class="groups-options"><a onclick="$('#exampleModalRename').modal()">Rename The Group</a></li>
-                        <li class="groups-options"><a href="#">Update Link</a></li>
-                        <li class="groups-options"><a href="#">Delete Meeting</a></li>
+                        <li class="groups-options"><a onclick="$('#exampleModalRename').modal()">Rename Your Meeting</a></li>
+                        <li class="groups-options"><a onclick="$('#exampleModalUpdateLink').modal()">Update Link</a></li>
+                        <li class="groups-options"><a onclick="$('#exampleModalDelete').modal()">Delete Meeting</a></li>
                         <li class="groups-options"><a onclick="fallbackCopyTextToClipboard('localhost:5000/groups/<%= _id %>')">Copy Link</a></li>
                     </ul>
                     <span class="group-hostedby"><%= meeting.name %> Hosted by <%= meeting.host.username %></span>
