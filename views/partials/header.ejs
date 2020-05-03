@@ -1,0 +1,38 @@
+<!-- views/partials/header.ejs -->
+
+<div class="header">
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="navbar-custom p-4">
+                <h4 class="navbar-text">
+                    <!-- Button for Signin-->
+                    <button type="button" class="btn btn-outline-light"
+                        onclick="$('#exampleModalCenterLogin').modal()">
+                        Login
+                    </button>
+                    <!-- Button for SignUp-->
+                    <button type="button" class="btn btn-outline-light"
+                        onclick="$('#exampleModalCenterSignUp').modal()">
+                        SignUp
+                    </button>
+                    <!-- Button for Create new Group-->
+                    <button type="button" class="btn btn-outline-light"
+                        onclick="$('#exampleModalCenterCreateGroup').modal()">
+                        Create New Group
+                    </button>
+                </h4>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-custom">
+        <div class="navbar-custom p-4">
+            <h4 class="navbar-text">#SocialButDistant</h4>
+            <div class="logo-text">Easier way to stay connected</div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+</div>

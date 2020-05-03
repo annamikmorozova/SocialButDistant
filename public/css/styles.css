@@ -22,9 +22,9 @@
     color: darkslategray;
 }
 
-.fas {
+.fas.fa-bars {
     color: white;
-    tab-size: large;
+    font-size: 40px;
 }
 
 .row {
@@ -89,6 +89,12 @@
     color: white;
 }
 
+.footer {
+    background-color: #299EEF;
+    padding: 20px;
+    margin-top: 40px;
+}
+
 .btn.btn-outline {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -97,12 +103,7 @@
 .copyright {
     text-align: center;
     color: white;
-}
-
-.footer {
-    background-color: #299EEF;
-    padding: 20px;
-    margin-top: 40px;
+    padding-top: 20px;
 }
 
 .contact {
@@ -120,14 +121,14 @@ a {
 
 .fab.fa-linkedin {
     font-size: 40px; 
-    color: #1c2541;
+    color: darkslategray;
     margin-bottom: 20px;
     cursor: pointer;
 }
 
 .far.fa-envelope {
     font-size: 40px; 
-    color: #1c2541;
+    color: darkslategray;
     margin-bottom: 20px;
     cursor: pointer;
 }
@@ -143,10 +144,16 @@ a {
     font-size: 100px; 
     margin: 100px;
     cursor: pointer;
+    color: white;
 }
 
 .fas.fa-plus:hover {
     text-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+}
+
+.fas.fa-align-justify {
+    color: white;
+    cursor: pointer;
 }
 
 .box-holder {
@@ -171,4 +178,73 @@ a {
     color: #1c2541;
     cursor: pointer;
     color: darkslategray;
+}
+
+.form-check-label {
+    color: darkslategray;
+    font-size: 15px; 
+}
+
+.modal-header {
+    background-color: #299EEF;
+}
+
+.modal-footer {
+    background-color: #299EEF;
+}
+
+.modal-title {
+    background-color: #299EEF;
+    color: white;
+}
+
+.forms-text {
+    font-size: 15px;
+    color: darkslategray;
+}
+
+.secretword-recommendation {
+    font-size: 12px;
+    color: darkslategray;
+}
+
+.address {
+    padding-top: 20px;
+}
+
+.about {
+    text-align: center;
+}
+
+.fab.fa-connectdevelop {
+    font-size: 100px; 
+    color: #1c2541;
+    margin: 30px;
+}
+
+.about-text {
+    text-align: center;
+    color: #1c2541;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.benefits {
+    text-align: left;
+    color: #1c2541;
+    font-size: 20px;
+}
+
+.btn-sm {
+    margin: 10px;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    color: darkslategray
+}
+
+.btn-sm:hover {
+    background-color: darkslategray;
+    color: white;
 }

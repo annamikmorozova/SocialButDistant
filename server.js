@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const path = require("path");
+const ejs = require("ejs");
 
 require("dotenv").config();
 
@@ -28,6 +29,10 @@ const groupsRouter = require("./routes/groups")
 
 app.use("/groups", groupsRouter);
 app.use("/users", usersRouter);
+
+app.get('/', function (req, res) {
+    res.render("pages/index")
+  });
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);

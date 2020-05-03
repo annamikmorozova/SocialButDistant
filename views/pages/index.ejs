@@ -1,0 +1,50 @@
+<!-- views/pages/index.ejs -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head') %>
+</head>
+
+<body>
+    <header>
+        <%- include('../partials/header') %>
+    </header>
+    <main class="about">
+        <div class="about-text">
+            Welcome to the easiest way of sharing links with your friends.
+        </div>
+        <i class="fab fa-connectdevelop"></i>
+        <div class="row">
+            <div class="col">
+                <ul class="benefits">
+                    <p>SignUp</p>
+                    <p>Create a new group. We highly recommend to secure it with a Secret Word of your choice</p>
+                    <p>Post your link</p>
+                    <p>Share it with your friends and you will never have to send links again</p>
+                    <p>Next time when you are hosting a game, just change the link on your account</p>
+                    <p>Make sure to tell friends to save the link</p>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="benefits">
+                    <p>If you don't want to SignUp</p>
+                    <p>You still have an access to the website</p>
+                    <p>As long as you have a Secret World, you can still see all the game nights your friends are hosting</p>
+                    <p>Make sure to save the link! The goal of the platform is sending less links while staying connected with friends online</p>
+                    <p>Want to create your own group and host games? Create an account! We promise to keep your email secure</p>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer') %>
+    </footer>
+
+    <%- include('../partials/forms') %>
+
+</body>
+
+</html>
