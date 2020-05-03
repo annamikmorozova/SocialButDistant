@@ -12,15 +12,16 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form>
+                <form action="/users/login" method="post">
                     <div class="form-group">
                         <label class="forms-text" for="exampleInputEmail1">Email address</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter email">
+                            placeholder="Enter email" name="email">
                     </div>
                     <div class="form-group">
                         <label class="forms-text" for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
+                            name="password">
                     </div>
                     <div class="form-group form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -44,15 +45,15 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form>
+                <form action="/groups" method="POST">
                     <div class="form-group">
-                        <label class="forms-text" for="exampleInputEmail1">Group Name</label>
-                        <input type="fname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        <label class="forms-text" for="name">Group Name</label>
+                        <input type="name" class="form-control" name="name"
                             placeholder="Enter group name">
                     </div>
                     <div class="form-group">
-                        <label class="forms-text" for="exampleInputEmail1">Secret Word</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        <label class="forms-text" for="secretWord" >Secret Word</label>
+                        <input type="name" class="form-control" name="secretWord"
                             placeholder="Type a secret word">
                         <span class="secretword-recommendation">We recommend you have a secret word for security
                             reasons. Share it only with your group of friends</span>

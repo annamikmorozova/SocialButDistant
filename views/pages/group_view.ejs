@@ -14,16 +14,19 @@
     </header>
     <div class="container-fluid">
         <h1 class="main-text">
-            <%= name %>
+            <%= group.name %>
             <i class="fas fa-edit"></i>
-            <button type="button" onclick="fallbackCopyTextToClipboard('localhost:5000/groups/<%= _id %>')"
-                class="btn btn-primary btn-sm">Copy Link</button>
+            <button type="button" onclick="fallbackCopyTextToClipboard('localhost:5000/groups/<%= group._id %>')" class="btn btn-primary btn-sm">Copy Link</button>
         </h1>
         <div class="box-holder">
-            <div class="newgroup-plus" onclick="$('#exampleModalCenterLogin').modal()">
+            <% if (user) { %>
+            <div class="newgroup-plus" onclick="$('#modalCenterCreateMeeting').modal()">
+            <% } else { %>
+            <div class="newgroup-plus" onclick="$('#examplemodalCenterCreateLogin').modal()">
+            <% } %>
                 <i class="fas fa-plus"></i>
             </div>
-            <% meetings.forEach(function(meeting) { %>
+            <% group.meetings.forEach(function(meeting) { %>
             <div class="newgroup">
                 <div class="dropdown">
                     <button class="dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown"
@@ -49,6 +52,7 @@
         </footer>
 
         <%- include('../partials/forms') %>
+        <%- include('../partials/new_meeting') %>
 
 </body>
 

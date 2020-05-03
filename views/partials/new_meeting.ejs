@@ -1,0 +1,29 @@
+<!-- Modal for Create new Meeting-->
+<div class="modal fade" id="modalCenterCreateMeeting" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLongTitle">Create New Group</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="/groups/<%= group._id %>/meeting" method="POST">
+                    <div class="form-group">
+                        <label class="forms-text" for="name">Meeting Name</label>
+                        <input type="name" class="form-control" name="name"
+                            placeholder="Enter meeting name">
+                    </div>
+                    <div class="form-group">
+                        <label class="forms-text" for="link">Link to Meeting</label>
+                        <input type="name" class="form-control" name="link"
+                            placeholder="Enter group name">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Create</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
