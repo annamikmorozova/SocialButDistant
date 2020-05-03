@@ -16,37 +16,39 @@
         <h1 class="main-text">
             <%= name %>
             <i class="fas fa-edit"></i>
-            <button type="button" onclick="fallbackCopyTextToClipboard('localhost:5000/groups/<%= _id %>')" class="btn btn-primary btn-sm">Copy Link</button>
+            <button type="button" onclick="fallbackCopyTextToClipboard('localhost:5000/groups/<%= _id %>')"
+                class="btn btn-primary btn-sm">Copy Link</button>
         </h1>
         <div class="box-holder">
             <div class="newgroup-plus" onclick="$('#exampleModalCenterLogin').modal()">
                 <i class="fas fa-plus"></i>
             </div>
             <% meetings.forEach(function(meeting) { %>
-            <div class="newgroup" onclick="window.open('<%= meeting.link %>')">
+            <div class="newgroup">
                 <div class="dropdown">
                     <button class="dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="true">
                         <i class="fas fa-align-justify"></i>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li class="groups-options"><a href="#">Rename the group</a></li>
-                        <li class="groups-options"><a href="#">Update link</a></li>
-                        <li class="groups-options"><a href="#">Dalete meeting</a></li>
-                        <li class="groups-options"><a href="#">Get link</a></li>
+                        <li class="groups-options"><a onclick="$('#exampleModalRename').modal()">Rename The Group</a></li>
+                        <li class="groups-options"><a href="#">Update Link</a></li>
+                        <li class="groups-options"><a href="#">Delete Meeting</a></li>
+                        <li class="groups-options"><a onclick="fallbackCopyTextToClipboard('localhost:5000/groups/<%= _id %>')">Copy Link</a></li>
                     </ul>
                     <span class="group-hostedby"><%= meeting.name %> Hosted by <%= meeting.host.username %></span>
                 </div>
+                    <i class="fas fa-video" onclick="window.open('<%= meeting.link %>')"></i>
+                </div>
+                <% }); %>
             </div>
-            <% }); %>
         </div>
-    </div>
 
-    <footer>
-        <%- include('../partials/footer') %>
-    </footer>
+        <footer>
+            <%- include('../partials/footer') %>
+        </footer>
 
-    <%- include('../partials/forms') %>
+        <%- include('../partials/forms') %>
 
 </body>
 

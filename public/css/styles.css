@@ -1,10 +1,15 @@
+.header {
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 27px;
+    font-size: 20px;
+}
+
 .navbar-text {
     color: white;
     font-weight: bolder;
-}
-
-.header {
-    margin-bottom: 10px;
 }
 
 .logo-text {
@@ -22,11 +27,6 @@
     color: darkslategray;
 }
 
-.fas.fa-bars {
-    color: white;
-    font-size: 40px;
-}
-
 .row {
     margin-left: 20px;
     margin-right: 20px;
@@ -38,8 +38,8 @@
     padding: 5px;
 }
 
- .groups-options:hover {
-    background-color: white;
+.groups-options:hover {
+    background-color: #5BC9EE;
 }
 
 .group-hostedby {
@@ -57,9 +57,14 @@
     -moz-box-shadow: 0 15px 10px #777;
     box-shadow: 0 15px 10px #777;
     margin-bottom: 25px;
-  }
+}
 
-  .newgroup-plus {
+.newgroup:hover {
+    background-color: #4A6E90;
+    cursor: pointer;
+}
+
+.newgroup-plus {
     width: 300px;
     margin: 10px;
     height: 300px;
@@ -68,11 +73,11 @@
     -moz-box-shadow: 0 15px 10px #777;
     box-shadow: 0 15px 10px #777;
     margin-bottom: 25px;
-  }
+}
 
-  .newgroup-plus:hover {
+.newgroup-plus:hover {
     background-color: #FFC300;
-  }
+}
 
 .dropdown {
     background-color: #FFC300;
@@ -87,6 +92,7 @@
 .footer-text {
     text-align: left;
     color: white;
+    font-size: 20px;
 }
 
 .footer {
@@ -95,9 +101,19 @@
     margin-top: 40px;
 }
 
-.btn.btn-outline {
-    margin-top: 15px;
-    margin-bottom: 15px;
+.address {
+    padding-top: 20px;
+}
+
+.about {
+    text-align: center;
+}
+
+.about-text {
+    text-align: center;
+    color: #1c2541;
+    font-size: 30px;
+    padding-bottom: 10px;
 }
 
 .copyright {
@@ -119,43 +135,6 @@ a {
     color: darkslategray;
 }
 
-.fab.fa-linkedin {
-    font-size: 40px; 
-    color: darkslategray;
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-
-.far.fa-envelope {
-    font-size: 40px; 
-    color: darkslategray;
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-
-.btn.btn-outline {
-    font-size: 15px; 
-    color: #1c2541;
-    border: 2px solid darkslategray;
-    cursor: pointer;
-}
-
-.fas.fa-plus {
-    font-size: 100px; 
-    margin: 100px;
-    cursor: pointer;
-    color: white;
-}
-
-.fas.fa-plus:hover {
-    text-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-}
-
-.fas.fa-align-justify {
-    color: white;
-    cursor: pointer;
-}
-
 .box-holder {
     display: flex;
     flex-direction: row;
@@ -164,8 +143,8 @@ a {
     justify-content: space-around;
 }
 
-.main-text { 
-    margin-left: 20px; 
+.main-text {
+    margin-left: 20px;
     display: flex;
     flex-direction: row;
     -webkit-flex-wrap: wrap;
@@ -173,16 +152,19 @@ a {
     color: darkslategray;
 }
 
-.fas.fa-edit {
-    font-size: 10px; 
-    color: #1c2541;
-    cursor: pointer;
+.form-check-label {
+    color: darkslategray;
+    font-size: 15px;
+}
+
+.forms-text {
+    font-size: 15px;
     color: darkslategray;
 }
 
-.form-check-label {
+.secretword-recommendation {
+    font-size: 12px;
     color: darkslategray;
-    font-size: 15px; 
 }
 
 .modal-header {
@@ -198,41 +180,19 @@ a {
     color: white;
 }
 
-.forms-text {
-    font-size: 15px;
-    color: darkslategray;
-}
-
-.secretword-recommendation {
-    font-size: 12px;
-    color: darkslategray;
-}
-
-.address {
-    padding-top: 20px;
-}
-
-.about {
-    text-align: center;
-}
-
-.fab.fa-connectdevelop {
-    font-size: 100px; 
-    color: #1c2541;
-    margin: 30px;
-}
-
-.about-text {
-    text-align: center;
-    color: #1c2541;
-    font-size: 30px;
-    padding-bottom: 10px;
-}
-
 .benefits {
     text-align: left;
     color: #1c2541;
     font-size: 20px;
+}
+
+.btn.btn-outline {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #1c2541;
+    border: 2px solid darkslategray;
+    cursor: pointer;
 }
 
 .btn-sm {
@@ -247,4 +207,60 @@ a {
 .btn-sm:hover {
     background-color: darkslategray;
     color: white;
+}
+
+.fas.fa-video {
+    font-size: 120px;
+    margin: 80px;
+    color: white;
+}
+
+.fas.fa-video:hover {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.fas.fa-bars {
+    color: white;
+    font-size: 40px;
+}
+
+.fab.fa-connectdevelop {
+    font-size: 100px;
+    color: #1c2541;
+    margin: 30px;
+}
+
+.fas.fa-plus {
+    font-size: 100px;
+    margin: 100px;
+    cursor: pointer;
+    color: white;
+}
+
+.fas.fa-plus:hover {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.fas.fa-align-justify {
+    color: white;
+    cursor: pointer;
+}
+
+.fab.fa-linkedin {
+    font-size: 40px;
+    color: darkslategray;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.far.fa-envelope {
+    font-size: 40px;
+    color: darkslategray;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.fas.fa-edit {
+    font-size: 12px;
+    color: darkslategray
 }

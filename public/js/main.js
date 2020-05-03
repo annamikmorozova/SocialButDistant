@@ -1,5 +1,4 @@
-
-
+   // Copy Clipboard URL
 function fallbackCopyTextToClipboard(text) {
     var textArea = document.createElement("textarea");
     textArea.value = text;
