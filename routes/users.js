@@ -57,7 +57,7 @@ router.route("/login").post((req, res) => {
                     console.log("Password doesn't match!")
                 } else {
                     req.session.user = user;
-                    res.redirect("/groups");
+                    res.redirect("/");
                 }
             })
         })

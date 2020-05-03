@@ -16,7 +16,7 @@
         <h1 class="main-text">
             <%= group.name %>
             <i class="fas fa-edit"></i>
-            <button type="button" onclick="fallbackCopyTextToClipboard('localhost:5000/groups/<%= group._id %>')" class="btn btn-primary btn-sm">Copy Link</button>
+            <button type="button" onclick="fallbackCopyTextToClipboard('https://social-but-distant.ue.r.appspot.com/groups/<%= group._id %>')" class="btn btn-primary btn-sm">Copy Link</button>
         </h1>
         <div class="box-holder">
             <% if (user) { %>
@@ -34,12 +34,14 @@
                         <i class="fas fa-align-justify"></i>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li class="groups-options"><a onclick="$('#exampleModalRename').modal()">Rename Your Meeting</a></li>
+                        <% if (user && (user._id == group.creator._id || user._id == meeting.host._id)) { %>
+                        <li class="groups-options"><a onclick="$('#exampleModalRename').modal()">Rename Meeting</a></li>
                         <li class="groups-options"><a onclick="$('#exampleModalUpdateLink').modal()">Update Link</a></li>
-                        <li class="groups-options"><a onclick="$('#exampleModalDelete').modal()">Delete Meeting</a></li>
-                        <li class="groups-options"><a onclick="fallbackCopyTextToClipboard('localhost:5000/groups/<%= _id %>')">Copy Link</a></li>
+                        <li class="groups-options"><a onclick="setUpDeleteMeeting('/groups/<%= group._id %>/delete/<%= meeting._id %>')">Delete Meeting</a></li>
+                        <% } %>
+                        <li class="groups-options"><a onclick="fallbackCopyTextToClipboard('<%= meeting.link %>')">Copy Link</a></li>
                     </ul>
-                    <span class="group-hostedby"><%= meeting.name %> Hosted by <%= meeting.host.username %></span>
+                    <span class="group-hostedby"><%= meeting.name %> Hosted by <%= meeting.host.firstName %></span>
                 </div>
                     <i class="fas fa-video" onclick="window.open('<%= meeting.link %>')"></i>
                 </div>

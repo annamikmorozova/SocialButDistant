@@ -22,3 +22,15 @@ function fallbackCopyTextToClipboard(text) {
   
     document.body.removeChild(textArea);
   }
+
+
+let delete_url;
+function setUpDeleteMeeting(url) {
+  delete_url = url;
+  $('#exampleModalDelete').modal();
+  console.log(delete_url);
+}
+
+function deleteMeeting() { 
+  location.href=delete_url;
+}

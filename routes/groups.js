@@ -45,9 +45,7 @@ router.route("/").get(checkSignIn, (req, res) => {
 
 router.route("/:gid/delete/:mid").get(checkSignIn, (req, res) => {
     Meeting.findOne({_id: req.params.mid}).then(meeting => {
-        console.log(meeting);
         Group.findOne({_id: req.params.gid}).then(group => {
-            console.log(group);
             if (req.session.user._id == meeting.host || req.session.user._id == group.creator) {
                 Meeting.deleteOne({_id: req.params.mid}, function (err) {
                     if (err) return res.send(err);
