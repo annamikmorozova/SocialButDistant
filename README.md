@@ -23,4 +23,4 @@ What's next for SocialButDistant:
 The site still needs a little bit more work to make it a fully functioning site. Would need to add pages and routes for the boring stuff like general settings, reset password etc. But besides that we could probably start making our friends use it right away!
 
 Built with:
-HTML, CSS, Bootstrap, Font-Awesome, Express.js, Node.js, Javascript, Mongodb, ejs, google-app-engine, google-cloud
+Express.js, Node.js, MongoDB, ejs, HTML, CSS, Bootstrap, Font-Awesome, google-app-engine, google-cloud
